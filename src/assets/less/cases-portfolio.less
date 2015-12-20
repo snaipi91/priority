@@ -1,0 +1,186 @@
+.g-portfolio {
+	position: relative;
+	z-index: 3;
+	height: auto;
+	padding: 0 100%;
+	margin: 0 -100%;
+	background: #090909 url('../images/background-portfolio.png') no-repeat center top;
+	.b-name-page {
+		height: 141px;
+		background: none;
+		.mb-wrap-info {
+			.title {
+				padding-top: 50px;
+				span {
+					width: 700px;
+					display: inline-block;
+					position: relative;
+					top: 30px;
+				}
+				&:before {
+					width: 160px;
+					height: 1px;
+					left: 57px;
+					bottom: 15px;
+					background: #aa5edf;
+				}
+				&:after {
+					width: 160px;
+					height: 1px;
+					right: 57px;
+					bottom: 15px;
+					background: #aa5edf;
+				}
+			}
+		}
+	}
+	.b-block-slider {
+		position: relative;
+		width: 882px;
+		height: 700px;
+		margin: 30px auto 0 auto;
+		.i-left {
+			top: 250px;
+			left: -50px;
+		}
+		.i-right {
+			top: 250px;
+			right: -50px;
+		}
+		.main-slide {
+			position: relative;
+			height: 531px;
+			border: 1px solid #a65cda;
+			background: #000;
+			.image {
+				position: absolute;
+				background-size: cover;
+				top: 3px;
+				left: 2px;
+				width: 876px;
+				height: 525px;
+			}
+		}
+		.frame.basic3 {
+			margin-top: 20px;
+			ul {
+				position: relative;
+				left: -110px;
+				overflow: visible;
+				font-size: 0;
+				li.active {
+					border: 1px solid #ccc;
+				}
+				li {
+					position: relative;
+					margin-right: 4px;
+					vertical-align: top;
+					display: inline-block;
+					width: 215px;
+					height: 140px;
+					border: 1px solid #9955c9;
+					background: #000;
+					span {
+						position: absolute;
+						top: 6px;
+						left: 6px;
+						width: 202px;
+						height: 131px;
+					}
+					&:last-child {
+						margin-right: 0;
+					}
+					.wrap-text {
+						position: relative;
+						display: inline-block;
+						top: 205px;
+						width: 202px;
+						text-align: center;
+						.text {
+							display: inline-block;
+							width: 132px;
+							font: 16px/16px @PFThin;
+							color: #fff;
+						}
+					}
+				}
+			}
+		}
+	}
+	.b-portfolio-description {
+		width: 880px;
+		margin: 25px auto;
+		.item {
+			margin: 35px 0;
+			font: 16px/24px @Light;
+			text-align: center;
+			color: #e1c8f2;
+		}
+	}
+	.b-review {
+		text-align: center;
+		height: 95px;
+		overflow: hidden;
+		font-size: 0;
+		.left-block {
+			display: inline-block;
+			background: #22162a;
+			padding: 20px 30px;
+			text-align: left;
+			.item {
+				width: 630px;
+				font: 16px/20px @Light;
+				color: #fff;
+			}
+		}
+		.right-block {
+			position: relative;
+			display: inline-block;
+			width: 200px;
+			height: 95px;
+			vertical-align: top;
+			background: #371e3a;
+			.icon {
+				position: absolute;
+				top: 9px;
+				left: 90px;
+				.sprite(@i-pdf);
+			}
+			.button {
+				position: absolute;
+				top: 53px;
+				left: 30px;
+				font: 13px/28px @PFMedium;
+				color: #fff;
+				text-align: center;
+				.sprite(@review-button);
+				&:hover {
+					.sprite(@review-button-hover);
+				}
+				&:active {
+					.sprite(@review-button-active);
+				}
+			}
+		}
+	}
+	.mb-wrap-buttons {
+		padding-bottom: 50px;
+		.buttons {
+			&:before {
+				background: #aa5edf;
+			}
+			&:after {
+				background: #aa5edf;
+			}
+			.button {
+				.sprite(@button-install);
+				&:hover {
+					.sprite(@button-install-hover);
+				}
+				&:active {
+					.sprite(@button-install-active);
+				}
+			}
+		}
+	}
+}

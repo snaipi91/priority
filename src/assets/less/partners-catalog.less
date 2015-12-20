@@ -1,0 +1,121 @@
+.g-background-partners {
+	.mb-wrap-info {
+		.title {
+			margin-bottom: 20px;
+		}
+	}
+}
+.b-brief-description {
+	position: relative;
+	width: 890px;
+	margin: 0 auto;
+	.wrap-image {
+		position: relative;
+		display: inline-block;
+		.sprite(@partner-rhombus);
+		.image {
+			width: 125px;
+			height: 144px;
+		}
+	}
+	.wrap-text {
+		display: inline-block;
+		width: 730px;
+		margin: 20px 0 0 30px;
+		vertical-align: top;
+		font: 14px/21px @Light;
+		color: #fff;
+	}
+}
+.b-partner-item {
+	margin-bottom: 50px;
+	.title {
+		padding: 20px 0;
+		text-align: center;
+		font: 24px/24px @PFThin;
+		color: #e9ddc8;
+	}
+	.description {
+		width: 830px;
+		margin: 0 auto;
+		font: 14px/24px @Light;
+		color: #e9ddc8;
+	}
+}
+.b-item-example {
+	position: relative;
+	margin: 20px 0;
+	padding-bottom: 39px;
+	text-align: center;
+	font-size: 0;
+	.wrap-item {
+		position: relative;
+		display: inline-block;
+		width: 265px;
+		max-height: 403px;
+		margin-right: 18px;
+		border: 1px solid #eda124;
+		background: #000;
+		&:last-child {
+			margin-right: 0;
+		}
+		.image {
+			display: inline-block;
+			margin: 10px 0 20px 0;
+			width: 250px;
+			height: 216px;
+			text-align: center;
+			color: #fff;
+		}
+		.name {
+			width: 220px;
+			margin-bottom: 20px;
+			display: inline-block;
+			text-align: center;
+			font: 18px/18px @PFThin;
+			color: #fff;
+		}
+		.characteristics {
+			width: 220px;
+			display: inline-block;
+			overflow: hidden;
+			margin-bottom: 20px;
+			font: 14px/14px @Light;
+			color: #fff;
+		}
+		.compare {
+			display: block;
+			padding-bottom: 25px;
+			font: 12px/12px @Light;
+			color: #eda124;
+		}
+		.i-item {
+			position: absolute;
+			bottom: -17px;
+			left: 120px;
+			.sprite(@i-item);
+		}
+	}
+	.active-item {
+		border: 1px solid #1fdf00;
+		.i-item {
+			.sprite(@i-item-active);
+		}
+	}
+	a {
+		.button {
+			position: absolute;
+			bottom: -14px;
+			left: 363px;
+			font: 14px/28px @Medium;
+			color: #000;
+			.sprite(@button-catalog);
+			&:hover {
+				.sprite(@button-catalog-hover);
+			}
+			&:active {
+				.sprite(@button-catalog-active);
+			}
+		}
+	}
+}

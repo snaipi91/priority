@@ -1,0 +1,28 @@
+{
+  "name": "gulp.local",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.8.10",
+    "gulp-bower": "0.0.10",
+    "gulp-concat": "^2.4.3",
+    "gulp-connect": "^2.2.0",
+    "gulp-csso": "^0.2.9",
+    "gulp-html-extend": "^0.5.6",
+    "gulp-imagemin": "^2.1.0",
+    "gulp-less": "^3.0.0",
+    "gulp-livereload": "^3.4.0",
+    "gulp-load-plugins": "^0.8.0",
+    "gulp-mocha": "^2.0.0",
+    "gulp-ng-annotate": "^0.5.2",
+    "gulp-uglify": "^1.1.0",
+    "gulp.spritesmith": "^2.4.0",
+    "require-dir": "^0.1.0"
+  }
+}

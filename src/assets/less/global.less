@@ -1,0 +1,382 @@
+a {
+	text-decoration: none;
+}
+// ================================ TITLE ==============================
+.mb-wrap-info {
+	.title {
+		position: relative;
+		padding-top: 25px;
+		text-align: center;
+		font: 30px/30px @PFThin;
+		color: #fff;
+		&:before {
+			content: "";
+			position: absolute;
+			width: 265px;
+			height: 1px;
+			left: 50px;
+			bottom: 15px;
+			background: #00b7e5;
+		}
+		&:after {
+			content: "";
+			position: absolute;
+			width: 265px;
+			height: 1px;
+			right: 50px;
+			bottom: 15px;
+			background: #00b7e5;
+		}
+	}
+}
+// test
+// ============================== ARROW ==================================
+.i-left {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	cursor: pointer;
+	.sprite(@left-arrow);
+}
+
+.i-right {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 10;
+	cursor: pointer;
+	.sprite(@right-arrow);
+}
+
+// ================================ BUTTON =================================
+.button {
+	display: inline-block;
+	span {
+		display: inline-block;
+		font: 14px PFDinDisplayPro-Med;
+		color: #fff;
+	}
+}
+
+// ============================== NEXT PREVIEW ==============================
+.mb-wrap-buttons {
+	.buttons {
+		position: relative;
+		padding-top: 25px;
+		text-align: center;
+		font-size: 0;
+		color: #fff;
+		&:before {
+			content: "";
+			position: absolute;
+			width: 280px;
+			height: 1px;
+			left: 50px;
+			bottom: 15px;
+			background: #00b7e5;
+		}
+		&:after {
+			content: "";
+			position: absolute;
+			width: 280px;
+			height: 1px;
+			right: 50px;
+			bottom: 15px;
+			background: #00b7e5;
+		}
+		.button {
+			vertical-align: middle;
+			text-align: center;
+			.sprite(@news-button);
+			font: 14px/28px @PFMedium;
+			color: #fff;
+			&:last-child {
+				margin-left: 10px;
+			}
+			&:hover {
+				.sprite(@news-button-hover);
+			}
+			&:active {
+				.sprite(@news-button-active);
+			}
+		}
+	}
+}
+
+// ======================================== CRUMBS ===================================/
+.crumbs {
+	position: relative;
+	width: 39%;
+	padding: 15px 0 0 57px;
+	li {
+		position: relative;
+		display: inline-block;
+		.activate {
+			color: #00cbfe;
+		}
+		a {
+			padding-right: 15px;
+			color: #fff;
+			font: 12px/12px @Light;
+			text-decoration: none;
+			&:hover {
+				color: #00cbfe;
+			}
+		}
+		.i-crumbs {
+			position: absolute;
+			top: 7px;
+			left: -11px;
+			width: 300px;
+			.sprite(@crumbs);
+		}
+	}
+}
+
+// ========================================= PAGINATION ===================================/
+.mb-wrap-pagination {
+	margin: 30px 0 0 0;
+	padding-bottom: 50px;
+	text-align: center;
+	ul {
+		li {
+			position: relative;
+			width: 28px;
+			height: 28px;
+			border: 1px solid #00b7e5;
+			display: inline-block;
+			background: #000;
+			&:first-child {
+				margin-right: 12px;
+			}
+			&:last-child {
+				margin-left: 12px;
+			}
+			.active {
+				background: #00637c;
+				z-index: 0;
+			}
+			a {
+				position: absolute;
+				left: 2px;
+				top: 2px;
+				width: 24px;
+				height: 24px;
+				display: inline-block;
+				text-decoration: none;
+				font: 16px/24px @Light;
+				color: #fff;
+				&:active {
+					background: #00637c;
+					z-index: 0;
+				}
+			}
+		}
+	}
+}
+// ======================================= B-PARTNER-ITEM ==================================/
+
+.b-partner-item {
+	position: relative;
+	width: 881px;
+	margin: 35px auto 65px auto;
+	background: rgba(39, 26, 8, .81);
+}
+
+// ======================================= B-PRESENT ========================================/
+.b-present-design {
+	padding-top: 20px;
+	.mb-text-image {
+		display: inline-block;
+		padding: 50px 0 50px 60px;
+		.wrap-image {
+			width: 277px;
+			height: 169px;
+			position: relative;
+			text-align: center;
+			border: 1px solid #00b3e0;
+			background: #000;
+			display: inline-block;
+			.image {
+				margin-top: 5px;
+				display: inline-block;
+				width: 265px;
+				height: 157px;
+			}
+		}
+		.wrap-text {
+			width: 545px;
+			padding-left: 100px;
+			display: inline-block;
+			vertical-align: top;
+			.paragraph {
+				font: 16px/22px @Light;
+				color: #a6b4c0;
+			}
+		}
+		.mirror {
+			padding: 0 100px 0 0;
+		}
+	}
+}
+// ====================================== FANCYBOX =======================================/
+.fancybox-type-image {
+	border-radius: 0;
+	.fancybox-skin {
+		background: #000;
+		border: 1px solid #eda124;
+	}
+}
+.fancybox-skin {
+	border: 1px solid #00b7e5;
+	border-radius: 0;
+	#feedback {
+		width: 634px;
+		height: 670px;
+		background: #000;
+		text-align: center;
+		.title {
+			width: 535px;
+			margin: 0 auto;
+			padding-top: 25px;
+			font: 18px/18px @PFRegular;
+			color: #d6ecf0;
+		}
+		.tip {
+			padding: 20px 0;
+			font: 15px/15px @Medium;
+			color: #d6ecf0;
+		}
+		.wrap-input {
+			width: 465px;
+			margin: 15px auto 0 auto;
+			.name {
+				padding-bottom: 8px;
+				text-align: left;
+				font: 14px/14px @Medium;
+				color: #00b7e5;
+			}
+			input {
+				width: 447px;
+				padding: 10px 10px;
+				font: 15px/15px @Medium;
+				color: #000;
+			}
+			.err {
+				border: 2px solid #ff0000;
+			}
+			textarea {
+				width: 465px;
+				height: 133px;
+			}
+		}
+		.wrap-button {
+			position: relative;
+			width: 465px;
+			margin: 15px auto;
+			.button {
+				position: absolute;
+				top: 10px;
+				right: 0;
+				vertical-align: middle;
+				.sprite(@button-feedback);
+				font: 14px/28px @PFMedium;
+				color: #fff;
+				&:hover {
+					opacity: .9;
+				}
+				&:active {
+					opacity: .8;
+				}
+			}
+		}
+	}
+}
+//
+// ================================================ CLOSE =============================================/
+.myClose {
+	position: absolute;
+	top: -12px;
+	.sprite(@i-close);
+}
+.myCloseAnother {
+	position: absolute;
+	top: -12px;
+	.sprite(@i-close-another);
+}
+// ================================================= SIDEBAR ===========================================/
+.b-sidebar {
+	position: absolute;
+	display: inline-block;
+	width: 212px;
+	margin: 20px 20px 0 7px;
+	vertical-align: top;
+	background: rgba(39, 26, 8, .81);
+	ul {
+		.menu {
+			position: relative;
+			border-bottom: 1px solid #412b09;
+			&:active.beforeElem {
+				display: block;
+			}
+			a {
+				position: relative;
+				width: 178px;
+				display: inline-block;
+				padding: 12px 17px;
+				font: 14px/19px @Medium;
+				color: #eda124;
+				.beforeElem {
+					visibility: visible;
+					position: absolute;
+					bottom: -20px;
+					left: 20px;
+					z-index: 3;
+					content: '';
+					border: 10px solid transparent;
+					border-top: 10px solid #fba71c;
+				}
+				&:hover {
+					background: #fba71c;
+					&:before {
+						display: block;
+					}
+					color: #000;
+				}
+			}
+			.active-menu {
+				background: #fba71c;
+				&:before {
+					display: block;
+				}
+				color: #000;
+			}
+			.child {
+				background: rgba(39, 26, 8, .81);
+				li {
+					position: relative;
+					z-index: 1;
+					a {
+						width: 171px;
+						padding-left: 25px;
+						font: 14px/19px @Medium;
+						color: #fff;
+						&:hover {
+							background: #3e2908;
+						}
+					}
+					.icon {
+						top: 20px;
+						left: 15px;
+						position: absolute;
+						.sprite(@i-left-item);
+					}
+				}
+			}
+		}
+	}
+}
+.fancybox-nav span {
+	visibility: visible;
+}
